@@ -1,0 +1,48 @@
+
+$White: hsl(0, 0%, 100%);
+$Light_gray: hsl(212, 45%, 89%);
+$Grayish_blue: hsl(220, 15%, 55%);
+$Dark_blue: hsl(218, 44%, 22%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: $Light_gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sub_main{
+        height: 610px;
+        width: 400px;
+        background-color: $White;
+        border-radius: 20px;
+        padding: 25px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            .image_box{
+                img{
+                    border-radius: 20px;
+                }
+            }
+            .text{
+                padding: 25px;
+                h3{
+                    font-size: 1.6em;
+                    font-weight: 700;
+                }
+                p{
+                    color: $Grayish_blue;
+                    font-size: 1.2em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
